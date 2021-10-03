@@ -88,3 +88,63 @@ footer {
     text-align: center;
     background-color: rgb(203, 235, 243);
 }
+
+.animation__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animation__container div {
+    height: .5em;
+}
+
+.animate__left,
+.animate__right {
+    width: 10.5em;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+.animate__left {
+    animation-name: animate__left;
+}
+
+.animate__right {
+    animation-name: animate__right;
+}
+
+@keyframes animate__left {
+    0% {
+        background-color: burlywood;
+        left: 0em;
+    }
+    50% {
+        background-color: yellow;
+    }
+    70% {
+        background-color: blue;
+    }
+    100% {
+        background-color: green;
+        left: 6em;
+    }
+}
+
+@keyframes animate__right {
+    0% {
+        background-color: burlywood;
+        right: 0em;
+    }
+    50% {
+        background-color: yellow;
+    }
+    70% {
+        background-color: blue;
+    }
+    100% {
+        background-color: green;
+        right: 6em;
+    }
+}

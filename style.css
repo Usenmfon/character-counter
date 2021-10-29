@@ -148,3 +148,20 @@ footer {
         right: 6em;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    header {
+        font-size: 2rem;
+    }
+    .character__count,
+    footer {
+        font-size: 1.6rem;
+    }
+    .color__dots div {
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    textarea {
+        font-size: 2rem;
+    }
+}
